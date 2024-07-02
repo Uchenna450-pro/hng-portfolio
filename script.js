@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     currentDayElement.textContent = dayOfWeek;
   };
 
+  $("#x").click(() => $(".nav-links").slideToggle(300));
+
   updateTime();
   setInterval(updateTime, 1000);
 });
