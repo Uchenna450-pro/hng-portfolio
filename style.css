@@ -51,6 +51,7 @@ nav {
 
 .nav-links .slide {
   height: auto;
+  display: block;
 }
 
 .toggle {
