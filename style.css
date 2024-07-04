@@ -30,6 +30,9 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
+  height: 0;
+  overflow: hidden !important;
+  transition: height .3s linear;
 }
 
 .nav-links li a {
@@ -44,6 +47,10 @@ nav {
 
 .nav-links li a:hover, .toggle ion-icon:hover {
   color: #ff6464;
+}
+
+.nav-links .slide {
+  height: auto;
 }
 
 .toggle {
