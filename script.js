@@ -14,8 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
     currentTimeUTCElement.textContent = utcTime;
     currentDayElement.textContent = dayOfWeek;
   };
-
-  $("#x").click(() => $(".nav-links").slideToggle(300));
+  const toggle = elem => {
+    if (elem.classList.contains("slide")) {
+      elem.classList.remove("slide");
+    } else {
+      elem.classList.add("slide");
+    }
+  };
+  document.getElementById("x").onclick = () => toggle(document.getElementById("nav-links"));
 
   updateTime();
   setInterval(updateTime, 1000);
