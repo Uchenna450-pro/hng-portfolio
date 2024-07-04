@@ -49,9 +49,9 @@ nav {
   color: #ff6464;
 }
 
-.nav-links .slide {
+.slide {
   height: auto;
-  display: block;
+  display: block !important;
 }
 
 .toggle {
